@@ -56,7 +56,6 @@ p {
 }
 
 /* Links */
-
 a{
     text-decoration: none;
 }
@@ -84,7 +83,6 @@ a{
 }
 
 /* Badges */
-
 .badge{
     border-radius: 20px;
     font-size: 2rem;
@@ -115,7 +113,6 @@ a{
     }
 }
 /* Lists */
-
 .list{
     list-style: none;
     padding-left: 0;
@@ -176,7 +173,6 @@ a{
 }
 
 /* Buttons */
-
 .btn{
     border-radius: 50px;
     border: 0;
@@ -275,11 +271,10 @@ font-size: 1.5rem;
 }
 
 /* Cards */
-
 .card{
     border-radius: 7px;
     box-shadow: 0 0 20px 10px #f3f3f3;
-    overflow: visible; /* it was hiddden b4, but lets check mosh's implementations for further assistance. */
+    overflow: hidden; /* it was hiddden b4, but lets check mosh's implementations for further assistance. */
 }
 
 .card__header, .card__body {
@@ -359,22 +354,23 @@ font-size: 1.5rem;
 }
 
 /* Media Objects */
-
 .media {
     display: flex;
 }
+
 .media__title {
     margin-top: 0;
 }
+
 .media__body {
     margin: 0 2rem;
 }
+
 .media__image {
     margin-top: 1rem;
 }
 
 /* Quotes */
-
 .quote {
     font-size: 3rem;
     font-style: italic;
@@ -424,7 +420,6 @@ font-size: 1.5rem;
 }
 
 /* Grids */
-
 .grid{
     display: grid;
 }
@@ -448,6 +443,7 @@ font-size: 1.5rem;
 
 .testimonial__image {
     position: relative;
+    margin: 0 3rem;
 }
 
 .testimonial__image > img {
@@ -461,6 +457,10 @@ font-size: 1.5rem;
 }
 
 @media screen and (min-width: 768px) {
+    .testimonial__image {
+        margin: 0;
+    }
+    
     .testimonial .quote,
     .testimonial .qoute__author {
         font-size: 2.4rem;
@@ -468,5 +468,6 @@ font-size: 1.5rem;
 
     .testimonial .quote {
         margin-left: 6rem;
+        margin-right: 0;
     }
 }
